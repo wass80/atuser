@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "atuser",
+  "version": "0.0",
+  "description": "show userid in atcoder",
+  "icons": {
+    "48": "icon48.png"
+  },
+  "content_scripts": [{
+    "matches": ["http://*.atcoder.jp/*"],
+    "js": ["script.js"]
+  }]
+}
