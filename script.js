@@ -4,6 +4,8 @@ function main(){
     data.user_screen_name = data.user_name;
     data.user_name = name;
   });
+  const activeBtn = document.querySelector(".li-pagination.active>a");
+  activeBtn.click();
 }
 
 const script = document.createElement("script");
