@@ -1,8 +1,6 @@
 function main(){
   ATCODER.standings.data.forEach((data)=>{
-    const name = data.user_screen_name;
-    data.user_screen_name = data.user_name;
-    data.user_name = name;
+    data.user_name = data.user_screen_name
   });
   const activeBtn = document.querySelector(".li-pagination.active>a");
   activeBtn.click();
